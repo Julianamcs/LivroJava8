@@ -5,8 +5,8 @@ public class ForDemo {
 		// TODO Auto-generated method stub
 
 		int count;
-		
-		for (count = 5; count < 0; count --) {
+		 
+		for (count = 1; count < 5; count = count + 1) {
 			System.out.println("This is count: " + count);
 			
 		}
