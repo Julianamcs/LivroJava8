@@ -6,7 +6,7 @@ public class ForDemo {
 
 		int count;
 		
-		for (count = 0; count < 5; count = count + 1) {
+		for (count = 0; count < 5; count ++) {
 			System.out.println("This is count: " + count);
 			
 		}
