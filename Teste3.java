@@ -1,6 +1,7 @@
 /*
- *Calcule a sistâ,cia da queda de um raio cujo som leve
- *7,2 segundos para alcaça-lo */
+ *Calcule a distãncia, em pés, um ouvinte está da queda de um relâmpago
+ *. O Som viaja aproximadamente 1.100 pés por segundopelo ar. Logo para esse projeto assuma
+ * que a  queda de um raio cujo som leve 7,2 segundos para alcaça-lo */
 public class Teste3 {
 
 	public static void main(String[] args) {

@@ -1,5 +1,5 @@
 /*
- * Demonstra seuqu«encias de escape de strings*/
+ * Demonstra sequencias de escape de strings*/
 public class EscapeString {
 
 	public static void main(String[] args) {
