@@ -14,21 +14,12 @@ public class VehicleDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Vehicle miniVan = new Vehicle();
-		Vehicle sportCar = new Vehicle();
+		Vehicle miniVan = new Vehicle(7, 16, 21);
+		Vehicle sportCar = new Vehicle(2, 14, 12);
 		
 		double gallons;
 		int dist = 252;
 		
-		//Atribuindo valores dos campos da miniVan
-		miniVan.passengers = 7;
-		miniVan.fuelcap = 16;
-		miniVan.mpg = 21;
-		
-		//Atribuindo valores dos campos do sportCar
-		sportCar.passengers = 2;
-		sportCar.fuelcap = 14;
-		sportCar.mpg = 12;
 		
 		gallons = miniVan.fuelneeded(dist);
 		System.out.println("miniVan can carry " + miniVan.passengers + " with range of " + miniVan.range() + " miles");
