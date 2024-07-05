@@ -1,38 +1,15 @@
 /**
  * 
  */
-package controle;
+package classes;
 
 /**
- * um sistema de ajuda simples
+ * convertendo o sistema de ajuda em uma classe Help
  */
 public class Help {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) throws java.io.IOException{
-		// TODO Auto-generated method stub
-		char choice, ignore;
-		do {
-			System.out.println("Help on: ");
-			System.out.println("1. if");
-			System.out.println("2. switch");
-			System.out.println("3. for");
-			System.out.println("4. while");
-			System.out.println("5. do-while");
-			System.out.println("6. break");
-			System.out.println("7. continue");
-			System.out.println("Choose one: ");
-			choice = (char) System.in.read();
-			
-			do {
-				ignore = (char) System.in.read();
-			}while(ignore != '\n');
-		}while(choice < '1' | choice > '7');
-		
-		System.out.println("\n");
-		switch (choice) {
+	void helpOn(int what) {
+		switch (what) {
 		case '1':
 			System.out.println("The if:");
 			System.out.println("if(condition) statement;");
@@ -75,5 +52,24 @@ public class Help {
 			System.out.print("Selection not found.");
 		}
 	}
-
+	
+	void showMenu() {
+		System.out.println("Help on: ");
+		System.out.println("1. if");
+		System.out.println("2. switch");
+		System.out.println("3. for");
+		System.out.println("4. while");
+		System.out.println("5. do-while");
+		System.out.println("6. break");
+		System.out.println("7. continue");
+		System.out.println("Choose one (q to quit): ");
+		System.out.println("\n");
+	}
+	
+	boolean isValid(int ch) {
+		if(ch < '1' | ch > '7' & ch != 'q')
+		{
+			return false;
+		}else return true;
+	}
 }
